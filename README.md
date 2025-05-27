@@ -33,25 +33,25 @@ The folder structure includes:
 ### Setup Instructions
 
 1. **Clone the Repository**:
-bash
+```bash
 git clone https://github.com/yourusername/CAG.WarehouseManagementSystem.git
-cd CAG.WarehouseManagementSystem
+cd CAG.WarehouseManagementSystem```
 2. **Configure the Database**:
    - Update the connection string in `appsettings.json` with your SQL Server credentials.
-
-3. **Apply Migrations**:
-4. **Run the Application**:
-5. **Access the API**:
+3. **Run the Application**:
+```bash
+   dotnet run```
+4. **Access the API**:
    - The API will be available at `http://localhost:5004/api`.
    - The Swagger UI is at http://localhost:5044/swagger/index.html
 
 ### Running Tests
 
 1. **Navigate to the Test Project**:
-bash
-cd CAG.WarehouseManagementSystem.Tests
+```bash
+cd CAG.WarehouseManagementSystem.Tests```
 
 2. **Run Tests**:
-bash
-dotnet test
+```bash
+dotnet test```
 
