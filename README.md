@@ -9,11 +9,10 @@ The system is designed to be scalable and maintainable, following best practices
 ## Architecture
 
 The project follows a microservices architecture pattern with RestAPI structure and Repository pattern for Data access.
-- Microservices pattern RestAPIs 
-- Repository Pattern for Data Access 
-- Configurable Data Source - Can switch between InMemory/Actual DB via DatabaseType in app.settings.json
-- Dependency Injection via custom AutoFac setup. No need to register every class - just inherit them from ITransient interface.
-- 
+- **Microservices** pattern **RestAPIs** 
+- **Repository Pattern** for Data Access 
+**- Configurable Data Source** - Can switch between InMemory/Actual DB via DatabaseType in app.settings.json
+**- Dependency Injection** via custom AutoFac setup. No need to register every class - just inherit them from ITransient interface.
 - Unit testable components.
 
 ## Project Structure
