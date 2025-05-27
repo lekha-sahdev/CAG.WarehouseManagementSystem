@@ -9,13 +9,12 @@ The system is designed to be scalable and maintainable, following best practices
 ## Architecture
 
 The project follows a microservices architecture pattern with RestAPI structure and Repository pattern for Data access.
-- **Microservices** pattern **RestAPIs** 
-- **Repository Pattern** for Data Access 
-- **Configurable Data Source** - Can switch between InMemory/Actual DB via DatabaseType in app.settings.json
-- **Dependency Injection** via custom AutoFac setup. No need to register every class - just inherit them from ITransient interface.
-- **Swagger UI** integration
-- **Unit testable** components.
+- Microservices pattern RestAPIs 
+- Repository Pattern for Data Access 
+- Configurable Data Source - Can switch between InMemory/Actual DB via DatabaseType in app.settings.json
+- Dependency Injection via custom AutoFac setup. No need to register every class - just inherit them from ITransient interface.
 - 
+- Unit testable components.
 
 ## Project Structure
 The folder structure includes:
@@ -29,30 +28,29 @@ The folder structure includes:
 ### Prerequisites
 
 - [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- Optional - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 ### Setup Instructions
 
 1. **Clone the Repository**:
-bash
+```bash
 git clone https://github.com/yourusername/CAG.WarehouseManagementSystem.git
-cd CAG.WarehouseManagementSystem
+cd CAG.WarehouseManagementSystem```
 2. **Configure the Database**:
    - Update the connection string in `appsettings.json` with your SQL Server credentials.
-
-3. **Apply Migrations**:
-4. **Run the Application**:
-5. **Access the API**:
+3. **Run the Application**:
+```bash
+   dotnet run```
+4. **Access the API**:
    - The API will be available at `http://localhost:5004/api`.
    - The Swagger UI is at http://localhost:5044/swagger/index.html
 
 ### Running Tests
 
 1. **Navigate to the Test Project**:
-bash
-cd CAG.WarehouseManagementSystem.Tests
+```bash
+cd CAG.WarehouseManagementSystem.Tests```
 
 2. **Run Tests**:
-bash
-dotnet test
-
+```bash
+dotnet test```
