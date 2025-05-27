@@ -13,7 +13,7 @@ The project follows a microservices architecture pattern with RestAPI structure 
 - Repository Pattern for Data Access 
 - Configurable Data Source - Can switch between InMemory/Actual DB via DatabaseType in app.settings.json
 - Dependency Injection via custom AutoFac setup. No need to register every class - just inherit them from ITransient interface.
-- 
+- Swagger integration
 - Unit testable components.
 
 ## Project Structure
