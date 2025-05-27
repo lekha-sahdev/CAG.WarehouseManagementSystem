@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAG.WarehouseManagementSystem", "CAG.WarehouseManagementSystem\CAG.WarehouseManagementSystem.csproj", "{6AEBEF50-BD96-4C93-9DC2-1AE5041CC117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAG.WarehouseManagementSystem.Tests", "CAG.WarehouseManagementSystem.Tests\CAG.WarehouseManagementSystem.Tests.csproj", "{3A9A7C6B-B533-884E-72EB-AF5E3504172D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AEBEF50-BD96-4C93-9DC2-1AE5041CC117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AEBEF50-BD96-4C93-9DC2-1AE5041CC117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AEBEF50-BD96-4C93-9DC2-1AE5041CC117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEBEF50-BD96-4C93-9DC2-1AE5041CC117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9A7C6B-B533-884E-72EB-AF5E3504172D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9A7C6B-B533-884E-72EB-AF5E3504172D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9A7C6B-B533-884E-72EB-AF5E3504172D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9A7C6B-B533-884E-72EB-AF5E3504172D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2D24D71-734B-4C5C-8173-4EADFFE227F2}
+	EndGlobalSection
+EndGlobal

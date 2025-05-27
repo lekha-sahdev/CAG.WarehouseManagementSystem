@@ -1,0 +1,6 @@
+@CAG.WarehouseManagementSystem_HostAddress = http://localhost:5044
+
+GET {{CAG.WarehouseManagementSystem_HostAddress}}/
+Accept: application/json
+
+###
