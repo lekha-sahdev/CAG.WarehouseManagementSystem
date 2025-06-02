@@ -3,15 +3,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CAG.WarehouseManagementSystem.Data.Entities
 {
-	public class PurchaseOrderProduct
+	public class SalesOrderProduct
 	{
-		[Key]
 		public int Id { get; set; }
 
-		public int PurchaseOrderId { get; set; }
+		[Required]
+		public int SalesOrderId { get; set; }
 
-		[ForeignKey("PurchaseOrderId")]
-		public PurchaseOrder PurchaseOrder { get; set; }
+		[ForeignKey("SalesOrderId")]
+		public SalesOrder SalesOrder { get; set; }
 
 		[Required]
 		public int ProductId { get; set; }

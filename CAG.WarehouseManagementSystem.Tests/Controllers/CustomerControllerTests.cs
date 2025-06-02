@@ -26,8 +26,8 @@ namespace CAG.WarehouseManagementSystem.Tests
 			// Arrange
 			var customers = new List<CustomerDto>
 			{
-				new CustomerDto { CustomerId = 1, Name = "John Doe", Address = "123 Main St" },
-				new CustomerDto { CustomerId = 2, Name = "Jane Doe", Address = "456 Elm St" }
+				new CustomerDto {  Name = "John Doe", Address = "123 Main St" },
+				new CustomerDto {  Name = "Jane Doe", Address = "456 Elm St" }
 			};
 			_customerServiceMock.Setup(service => service.GetAllCustomersAsync()).ReturnsAsync(customers);
 
@@ -51,7 +51,7 @@ namespace CAG.WarehouseManagementSystem.Tests
 			var ex = await Assert.ThrowsAsync<CagBusinessException>(() => _customerController.GetCustomer(10));
 
 			// Assert
-			Assert.Equal(ex.Message, "Not Found");
+			Assert.Equal("Not Found", ex.Message);
 		}
 
 		[Fact]

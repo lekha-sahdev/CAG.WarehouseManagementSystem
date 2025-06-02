@@ -5,7 +5,7 @@ namespace CAG.WarehouseManagementSystem.Data.Entities
 	public class Product
 	{
 		[Key]
-		public int ProductId { get; set; }
+		public int Id { get; set; }
 
 		[Required]
 		[MaxLength(50)]
@@ -21,7 +21,5 @@ namespace CAG.WarehouseManagementSystem.Data.Entities
 		[MaxLength(50)]
 		[Required]
 		public required string Dimensions { get; set; }
-
-		// Add other properties as needed
 	}
 }

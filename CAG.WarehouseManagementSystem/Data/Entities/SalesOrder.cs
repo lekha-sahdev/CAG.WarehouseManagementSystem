@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CAG.WarehouseManagementSystem.Data.Entities
 {
-	public class PurchaseOrder
+	public class SalesOrder
 	{
 		[Key]
 		public int Id { get; set; }
@@ -14,9 +14,12 @@ namespace CAG.WarehouseManagementSystem.Data.Entities
 		[Required]
 		public int CustomerId { get; set; }
 
-		[ForeignKey(nameof(CustomerId))]
-		public Customer Customer { get; set; }
+		[ForeignKey("CustomerId")]
+		public Customer Customer { get; set; } 
 
-		public required ICollection<PurchaseOrderProduct> PurchaseOrderProducts { get; set; }
+		public required ICollection<SalesOrderProduct> SalesOrderProducts { get; set; }
+
+		[Required]
+		public required string ShipmentAddress { get; set; }
 	}
 }

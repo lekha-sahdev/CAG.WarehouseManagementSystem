@@ -1,21 +1,14 @@
 using AutoMapper;
 using CAG.WarehouseManagementSystem.Data.Entities;
-using CAG.WarehouseManagementSystem.Data.Repositories.CAG.WarehouseManagementSystem.Data.Repositories;
 using CAG.WarehouseManagementSystem.Dtos;
 using CAG.WarehouseManagementSystem.ExceptionManagement;
 
 namespace CAG.WarehouseManagementSystem.Services
 {
-	public class CustomerService : ICustomerService
+	public class CustomerService(IRepository<Customer> customerRepository, IMapper mapper) : ICustomerService
 	{
-		private readonly ICustomerRepository _customerRepository;
-		private readonly IMapper _mapper;
-
-		public CustomerService(ICustomerRepository customerRepository, IMapper mapper)
-		{
-			_customerRepository = customerRepository;
-			_mapper = mapper;
-		}
+		private readonly IRepository<Customer> _customerRepository = customerRepository;
+		private readonly IMapper _mapper = mapper;
 
 		public async Task<IEnumerable<CustomerDto>> GetAllCustomersAsync()
 		{
@@ -41,7 +34,7 @@ namespace CAG.WarehouseManagementSystem.Services
 		public async Task<bool> UpdateCustomerAsync(int id, UpdateCustomerDto customerDto)
 		{
 			var customer = _mapper.Map<Customer>(customerDto);
-			customer.CustomerId = id;
+			customer.Id = id;
 			return await _customerRepository.UpdateAsync(customer);
 		}
 
