@@ -97,13 +97,3 @@ class Program
 			.Where(a => a.IsGenericTypeDefinition == isGeneric);
 	}
 }
-
-// Add the missing definition for RetryPolicyOptions.  
-// This class is likely a configuration class for retry policies.  
-// If this is not the correct definition, please provide more context or clarify.  
-
-public class RetryPolicyOptions
-{
-	public int RetryCount { get; set; }
-	public int RetryDelaySeconds { get; set; }
-}
