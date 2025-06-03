@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "CAG.WarehouseManagementSystem\\CAG.WarehouseManagementSystem.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "CAG.LegacyWareHouseMngntSystem\\CAG.LegacyWareHouseMngntSystem.csproj",
+        "Action": "Start",
+        "DebugTarget": "CAG.LegacyWareHouseMngntSystem"
+      }
+    ]
+  }
+]

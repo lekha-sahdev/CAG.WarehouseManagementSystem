@@ -104,9 +104,8 @@ internal class Program
 		builder.Services.AddDbContext<WareHouseDbContext>(options =>
 		{
 			if (sharedSqliteConnection != null)
-				options.UseSqlite(sharedSqliteConnection)
-				.LogTo(Console.WriteLine, LogLevel.Trace)
-				.EnableSensitiveDataLogging();
+				options.UseSqlite(sharedSqliteConnection);
+
 
 			else if (builder.Configuration.GetValue<string>("DatabaseType")!.Equals("InMemory"))
 				options.UseInMemoryDatabase("WareHouseDb");
